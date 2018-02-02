@@ -23,16 +23,7 @@ export default class App extends React.Component {
 				</View>
 				<ScrollView style={styles.scrollContainer}>{notes}</ScrollView>
 
-				<View style={styles.footer}>
-					<TextInput
-						style={styles.textInput}
-						placeholder=">note"
-						onChangeText={noteText => this.setState({ noteText })}
-						value={this.state.noteText}
-						placeholderTextColor="white"
-						underlineColorAndroid="transparent"
-					/>
-				</View>
+				<View style={styles.footer} />
 				<Button title="Add" style={styles.addButton} onPress={() => {}} />
 			</View>
 		);
